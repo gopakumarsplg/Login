@@ -1,5 +1,6 @@
 package com.example.Login.Project.entity;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.validation.annotation.Validated;
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Table(name = "users")
 @Getter
 @Setter
+@Data
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
